@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Leonid Konovalov](https://up.htmlacademy.ru/htmlcss-individual/2/user/176546).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Хабиров](https://htmlacademy.ru/profile/alex_khab).
+
 
 ---
 
