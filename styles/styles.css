@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,6 +10,116 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+
+  font-size: 18px;
+  line-height: 21px;
+
+  background-color: #ffffff;
+}
+
+/*Titles*/
+.reasons-title,
+.recommendations-title,
+.description-title,
+.search-title,
+.newsletter-title {
+  text-transform: uppercase;
+}
+
+/*Main*/
+.main-index {
+  text-align: center;
+}
+
+.main-header {
+  background-image: url("../images/index-head.jpg");
+  background-color: black;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+/*Navigation*/
+.navigation-link,
+.social-link,
+.footer-contacts-phone,
+.footer-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*Description*/
+.description-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.description-reasons {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/*Reasons*/
+.reasons-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.reasons-item:first-child,
+.reasons-item:last-child {
+  background-color: #82B3D3;
+}
+
+.reasons-item:nth-child(odd),
+.recommendations-item:first-child,
+.recommendations-item:last-child {
+  background-color: #83B3D31F;
+}
+
+.reasons-item:nth-child(even){
+  background-color: #83B3D333;
+}
+
+/*Search*/
+.search-link {
+  background-color: #756157;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*Newsletter*/
+.newsletter {
+  background-image: url("../images/subscribe.jpg");
+  background-color: black;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.footer-contacts-phone {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
 }
