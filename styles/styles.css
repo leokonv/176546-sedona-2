@@ -41,11 +41,88 @@ body {
   text-align: center;
 }
 
-.main-header {
-  background-image: url("../images/index-head.jpg");
-  background-color: black;
+.main-header,
+.inner-header {
+  background-color: #000000;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.main-header {
+  background-image: url("../images/index-header.jpg");
+}
+
+.inner-header {
+  background-image: url("../images/inner-header.jpg");
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+/*Filter*/
+.catalog-filter-group-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/*Control*/
+.control-input,
+.newsletter-email {
+  background-color: #F2F2F2;
+  border: none;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.control-input {
+  font-weight: 700;
+}
+
+
+/*Button*/
+.button,
+.hotel-card-button,
+.hotel-card-rating {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+
+.transparent-button {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.blue-button {
+  background-color: #82B3D3;
+}
+
+.green-button {
+  background-color: #7DB54F;
+}
+
+/*Card*/
+.hotel-card-button {
+  text-decoration: none;
+  background-color: #756157;
+}
+
+.hotel-card-rating {
+  background-color: #F2F2F2;
+  color: #333333;
 }
 
 /*Navigation*/
@@ -53,7 +130,6 @@ body {
 .social-link,
 .footer-contacts-phone,
 .footer-link {
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -101,7 +177,6 @@ body {
 .secondary-navigation-link-button {
   background-color: #756157;
 
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -111,11 +186,15 @@ body {
 }
 
 /*Newsletter*/
-.newsletter {
+.newsletter-background {
   background-image: url("../images/subscribe.jpg");
   background-color: black;
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.newsletter {
+  text-align:  center;
 }
 
 .footer-contacts-phone {
@@ -123,4 +202,23 @@ body {
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
+}
+
+/*Pagination*/
+.pagination-link {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.pagination-link-current,
+.pagination-link-more {
+  color: #000000;
+}
+
+.pagination-link-current {
+  background-color: #F2F2F2;
+}
+
+.pagination-link-more {
+  background-color: #ffffff;
 }
