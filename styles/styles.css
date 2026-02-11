@@ -14,8 +14,28 @@
   font-display: swap;
 }
 
-.visually-hidden {
-  display: none;
+:root {
+  --body-color: #f2f2f2;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --blue-color: #82b3d3;
+  --green-color: #7db54F;
+  --brown-color: #756157;
+  --grey-color: #333333;
+  --dark-grey-color: #83b3d31f;
+  --light-grey-color: #83b3d333;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 body {
@@ -23,16 +43,18 @@ body {
 
   font-size: 18px;
   line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
 
-  background-color: #ffffff;
+  background-color: var(--body-color);
+}
+
+a {
+  text-decoration: none;
 }
 
 /*Titles*/
-.reasons-title,
-.recommendations-title,
-.description-title,
-.search-title,
-.newsletter-title {
+.section-title, {
   text-transform: uppercase;
 }
 
@@ -43,7 +65,7 @@ body {
 
 .main-header,
 .inner-header {
-  background-color: #000000;
+  background-color: var(--black-color);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -54,19 +76,23 @@ body {
 
 .inner-header {
   background-image: url("../images/inner-header.jpg");
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.breadcrumbs-link {
-  font-size: 16px;
-  line-height: 21px;
-  text-decoration: none;
+  color: var(--white-color);
 }
 
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
+}
+
+.white-section {
+  background-color: var(--white-color);
+}
+
+
+/*Breadcrumbs*/
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
 }
 
 /*Filter*/
@@ -79,7 +105,7 @@ body {
 /*Control*/
 .control-input,
 .newsletter-email {
-  background-color: #F2F2F2;
+  background-color: var(--body-color);
   border: none;
   font-size: 18px;
   line-height: 24px;
@@ -94,10 +120,11 @@ body {
 .button,
 .hotel-card-button,
 .hotel-card-rating {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--white-color);
   text-transform: uppercase;
   border: none;
 }
@@ -107,22 +134,21 @@ body {
 }
 
 .blue-button {
-  background-color: #82B3D3;
+  background-color: var(--black-color);
 }
 
 .green-button {
-  background-color: #7DB54F;
+  background-color: var(--green-color);
 }
 
 /*Card*/
 .hotel-card-button {
-  text-decoration: none;
-  background-color: #756157;
+  background-color: var(--brown-color);
 }
 
 .hotel-card-rating {
-  background-color: #F2F2F2;
-  color: #333333;
+  background-color: var(--body-color);
+  color: var(--grey-color);
 }
 
 /*Navigation*/
@@ -133,9 +159,8 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  color: #000000;
+  color: var(--black-color);
   text-align: center;
-  text-decoration: none;
 }
 
 /*Description*/
@@ -159,36 +184,35 @@ body {
 
 .reasons-item:first-child,
 .reasons-item:last-child {
-  background-color: #82B3D3;
+  background-color: var(--blue-color);
 }
 
 .reasons-item:nth-child(odd),
 .recommendations-item:first-child,
 .recommendations-item:last-child {
-  background-color: #83B3D31F;
+  background-color: var(--dark-grey-color);
 }
 
 .reasons-item:nth-child(even){
-  background-color: #83B3D333;
+  background-color: var(--light-grey-color);
 }
 
 /*Search*/
 .search-link,
 .secondary-navigation-link-button {
-  background-color: #756157;
+  background-color: var(--brown-color);
 
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--white-color);
   text-align: center;
-  text-decoration: none;
 }
 
 /*Newsletter*/
 .newsletter-background {
   background-image: url("../images/subscribe.jpg");
-  background-color: black;
+  background-color: var(--black-color);
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -198,27 +222,36 @@ body {
 }
 
 .footer-contacts-phone {
-  font-style: normal;
   font-size: 40px;
   line-height: 40px;
-  font-weight: 400;
 }
 
 /*Pagination*/
 .pagination-link {
-  color: #ffffff;
-  background-color: #82B3D3;
+  color: var(--white-color);
+  background-color: var(--blue-color);
 }
 
 .pagination-link-current,
 .pagination-link-more {
-  color: #000000;
+  color: var(--black-color);
 }
 
 .pagination-link-current {
-  background-color: #F2F2F2;
+  background-color: var(--body-color);
 }
 
 .pagination-link-more {
-  background-color: #ffffff;
+  background-color: var(--white-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
